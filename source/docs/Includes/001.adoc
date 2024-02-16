@@ -1,0 +1,135 @@
+== OpenG LabVIEW Data
+
+image::OpenG_LabVIEW_Data_icon.png[]
+
+image::OpenG_LabVIEW_Data.png[]
+
+=== To Variant
+
+image::To_Variant.png[]
+
+LabVIEW built-in function
+
+=== Variant To Data
+
+image::Variant_To_Data.png[]
+
+LabVIEW built-in function
+
+=== Get Data Name
+
+image::Get_Data_Name__ogtk.vi.png[]
+
+Returns the name of the data wired on input.
+
+=== Set Data Name
+
+image::Set_Data_Name__ogtk.vi.png[]
+
+Changes the Data Name of Variant Data.
+<b>Note:</b> Variant attributes will persist after this operation.
+
+=== Get Variant Attribute
+
+image::Get_Variant_Attribute.png[]
+
+LabVIEW built-in function
+
+=== Set Variant Attribute
+
+image::Set_Variant_Attribute.png[]
+
+LabVIEW built-in function
+
+=== Get Variant Attributes
+
+image::Get_Variant_Attributes__ogtk.vi.png[]
+
+Returns an array of a variant's attribute names as strings and an array of attributes as variants.
+
+=== Delete Variant Attribute
+
+image::Delete_Variant_Attribute.png[]
+
+LabVIEW built-in function
+
+=== Variant to Header Info
+
+image::Variant_to_Header_Info__ogtk.vi.png[]
+
+Returns flattened string and type descriptor of variant data, plus selected type info. 
+
+=== Get TDEnum from Data
+
+image::Get_TDEnum_from_Data__ogtk.vi.png[]
+
+Gets the type enumeration enum of the input.
+
+=== Get Waveform Type Enum from Data
+
+image::Get_Waveform_Type_Enum_from_Data__ogtk.vi.png[]
+
+Gets the Waveform Type Enumeration of the input. 
+
+=== Get Refnum Type Enum from Data
+
+image::Get_Refnum_Type_Enum_from_Data__ogtk.vi.png[]
+
+Gets the Refnum Type Enumeration of the input. 
+
+=== Variant To Flattened String
+
+image::Variant_To_Flattened_String.png[]
+
+LabVIEW built-in function
+
+=== Flattened String To Variant
+
+image::Flattened_String_To_Variant.png[]
+
+LabVIEW built-in function
+
+=== Get Default Data from Variant
+
+image::Get_Default_Data_from_Variant__ogtk.vi.png[]
+
+<b>Default VData</b> returns default data of the type defined by <b>Variant</b>.
+
+=== Variant Constant
+
+image::Variant_Constant__ogtk.vi.png[]
+
+=== LVOOP Get Default Object
+
+image::LVOOP_Get_Default_Object__ogtk.vi.png[]
+
+<b>Object Default Instance</b> returns a default object of the same Class as <b>Object</b>.
+
+=== LVOOP Is Default Value
+
+image::LVOOP_Is_Default_Value__ogtk.vi.png[]
+
+<b>Is Default Value?</b> returns TRUE only if <b>Object</b> is the default instance of its Class.
+
+=== LVOOP Is Same Or Descendant Class
+
+image::LVOOP_Is_Same_Or_Descendant_Class__ogtk.vi.png[]
+
+<b>Is Same Class or Descendant?</b> returns TRUE if the <b>Possible Descendant Object</b> is of the same Class as, or is a descendant Class of, the <b>Object</b>.  
+
+=== LVOOP Return Class Name
+
+image::LVOOP_Return_Class_Name__ogtk.vi.png[]
+
+Returns the <b>Class Base Name</b>, <b>Qualified Name</b> and <b>Qualified Name Array</b> of <b>Object</b>.
+
+For example if <b>Object</b> is of type <b>Library.lvlib:Class 1.lvclass</b> then:
+<b>Class Base Name</b> = Class 1
+<b>Qualified Name</b> = Library.lvlib:Class 1.lvclass
+<b>Qualified Name Array</b> = [Library.lvlib, Class 1.lvclass]
+
+<b>Notes:</b>
+This VI benefits from being generic (e.g. good for probes/scripting) however, is most likely inefficient to the cost of flattening the entire object data to a string (as is any VI that does this). Although this VI is optimised to only use the default object data.
+
+<b>The following alternative method is recommended for high performance applications:</b>
+Add a dynamic dispatch method to the root Class (e.g. called "Get Class Name.vi") and override that VI at every level of the hierarchy to return a string constant of the desired name. This avoids the memory allocation and performance hit of the flattening to the string. An example of a use case is creating a by-name-lookup object hierarchy.

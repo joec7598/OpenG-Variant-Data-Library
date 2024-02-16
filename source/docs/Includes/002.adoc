@@ -1,0 +1,17 @@
+== VEnum
+
+image::VEnum_icon.png[]
+
+image::VEnum.png[]
+
+=== Get Strings from Enum
+
+image::Get_Strings_from_Enum__ogtk.vi.png[]
+
+Returns Enum Strings array, String Value and Enum Name from an Enum.
+
+=== Set Enum String Value
+
+image::Set_Enum_String_Value__ogtk.vi.png[]
+
+Sets an enum's integer value to the position within the enum's strings matching the <B>String Value</B> input. Returns<B> Default Enum Value</B> if an error occurs.

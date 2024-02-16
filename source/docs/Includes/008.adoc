@@ -1,0 +1,11 @@
+== Additional Object Functions
+
+image::Additional_Object_Functions_icon.png[]
+
+image::Additional_Object_Functions.png[]
+
+=== Get GOOP Object Type
+
+image::Get_GOOP_Object_Type__ogtk.vi.png[]
+
+Resolves a GOOP Refnum's Object Type (which is the string value of the Enum in GOOP Datalog File Refnum).

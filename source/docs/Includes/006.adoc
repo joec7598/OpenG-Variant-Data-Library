@@ -1,0 +1,17 @@
+== VNumeric
+
+image::VNumeric_icon.png[]
+
+image::VNumeric.png[]
+
+=== Strip Units
+
+image::Strip_Units__ogtk.vi.png[]
+
+Converts a number with or without units to pure number.
+
+=== Get Physical Units
+
+image::Get_Physical_Units__ogtk.vi.png[]
+
+Returns the physical units of the variant input (number or array).

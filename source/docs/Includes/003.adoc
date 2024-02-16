@@ -1,0 +1,65 @@
+== VCluster
+
+image::VCluster_icon.png[]
+
+image::VCluster.png[]
+
+=== Get Cluster Element by Name
+
+image::Get_Cluster_Element_by_Name__ogtk.vi.png[]
+
+Returns the element in the cluster by its name.
+
+=== Set Cluster Element by Name
+
+image::Set_Cluster_Element_by_Name__ogtk.vi.png[]
+
+Returns a cluster with element replaced with new element value. If <B>Element name</B> unwired, <B>New Element Value</B> data name is used. Data type of the new element is not checked for compatibility with replaced element.
+
+=== No of Elements in Cluster
+
+image::No_of_Elements_in_Cluster__ogtk.vi.png[]
+
+Returns the number of elements in a  cluster.
+
+=== Get Cluster Element Names
+
+image::Get_Cluster_Element_Names__ogtk.vi.png[]
+
+Returns the data names of the cluster elements.
+
+=== Get Cluster Elements TDs
+
+image::Get_Cluster_Elements_TDs__ogtk.vi.png[]
+
+Returns the elements of a cluster as an array of variant data.
+
+=== Split Cluster TD
+
+image::Split_Cluster_TD__ogtk.vi.png[]
+
+Splits the TD of a Cluster into its elements TDs.
+
+=== Cluster to VArray
+
+image::Cluster_to_VArray__ogtk.vi.png[]
+
+Convert a cluster of identical element datatypes into an array.
+
+=== Array to VCluster
+
+image::Array_to_VCluster__ogtk.vi.png[]
+
+Returns the elements of an array as elements of a variant cluster.
+
+=== Cluster to Array of VData
+
+image::Cluster_to_Array_of_VData__ogtk.vi.png[]
+
+Returns the elements of a cluster as an array of variant data.
+
+=== Array of VData to VCluster
+
+image::Array_of_VData_to_VCluster__ogtk.vi.png[]
+
+Returns the elements of an array as elements of a variant cluster.

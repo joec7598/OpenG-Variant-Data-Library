@@ -1,0 +1,77 @@
+== VArray
+
+image::VArray_icon.png[]
+
+image::VArray.png[]
+
+=== Index Array
+
+image::Index_Array__ogtk.vi.png[]
+
+Returns the element of a MultiD array at given indices. Inefficient for large arrays.
+
+=== Replace Array Element
+
+image::Replace_Array_Element__ogtk.vi.png[]
+
+Replaces the elements in a MultiD array at given indices.
+
+=== Array Size(s)
+
+image::Array_Size(s)__ogtk.vi.png[]
+
+Returns the number of elements in each dimension and number of dimensions of variant array input. 
+
+=== Reshape Array to 1D VArray
+
+image::Reshape_Array_to_1D_VArray__ogtk.vi.png[]
+
+Reshapes all elements from a MultiD array in a variant 1D array. Returns the input array size(s).
+
+=== Reshape 1D Array
+
+image::Reshape_1D_Array__ogtk.vi.png[]
+
+Reshapes all elements from a 1D array in a variant MultiD array.
+
+=== Get Array Element TDEnum
+
+image::Get_Array_Element_TDEnum__ogtk.vi.png[]
+
+Returns the type descriptor enumeration of the array element.
+
+=== Get Array Element TD
+
+image::Get_Array_Element_TD__ogtk.vi.png[]
+
+Returns the type descriptor of the array element.
+
+=== Get Array Element Default Data
+
+image::Get_Array_Element_Default_Data__ogtk.vi.png[]
+
+Returns the default data of the array element.
+
+=== Array to VCluster
+
+image::Array_to_VCluster__ogtk.vi.png[]
+
+Returns the elements of an array as elements of a variant cluster.
+
+=== Cluster to VArray
+
+image::Cluster_to_VArray__ogtk.vi.png[]
+
+Convert a cluster of identical element datatypes into an array.
+
+=== Array to Array of VData
+
+image::Array_to_Array_of_VData__ogtk.vi.png[]
+
+Converts an Array into a 1D Array of variants.
+
+=== Array of VData to VArray
+
+image::Array_of_VData_to_VArray__ogtk.vi.png[]
+
+Converts a 1D Array of variants (of identical element datatypes) to an array of data wrapped in a Variant.

@@ -1,0 +1,112 @@
+== Type Descriptor
+
+image::Type_Descriptor_icon.png[]
+
+image::Type_Descriptor.png[]
+
+=== Get Header from TD
+
+image::Get_Header_from_TD__ogtk.vi.png[]
+
+Returns the Get Header from TD.
+
+=== Get TDEnum from TD
+
+image::Get_TDEnum_from_TD__ogtk.vi.png[]
+
+Gets a type enumerated constant from a type descriptor array.
+
+=== Get Waveform Type Enum from TD
+
+image::Get_Waveform_Type_Enum_from_TD__ogtk.vi.png[]
+
+Gets a Waveform Subtype Enumeration from a Type Descriptor Array.
+
+=== Get Refnum Type Enum from TD
+
+image::Get_Refnum_Type_Enum_from_TD__ogtk.vi.png[]
+
+Gets a Refnum Subtype Enumeration from a Type Descriptor Array.
+
+=== Get Default Data from TD
+
+image::Get_Default_Data_from_TD__ogtk.vi.png[]
+
+Returns default data of the type defined by the TD.  This VI calls itself recursively.
+
+This VI is <b>Reentrant</b>
+
+=== Get Data Name from TD
+
+image::Get_Data_Name_from_TD__ogtk.vi.png[]
+
+Returns the name of the data described by the type string input.
+
+=== Size of Data from TD
+
+image::Size_of_Data_from_TD__ogtk.vi.png[]
+
+Returns the size of data of the TD. 
+The VI will return the following bytes of the listed datatypes:
+<b>1 byte</b> - I8, U8, Enum U8, Boolean
+<b>2 bytes</b> - 16, U16, Enum U16 
+<b>4 bytes</b> - I32, U32, SGL, Enum U32, Refnum
+<b>8 bytes</b> - I64, U64, DBL, CSG, Enum U64 
+<b>16 bytes</b> - EXT, CDB
+<b>32 bytes</b> - CXT
+<b>-1</b> -  String, Path, Array 
+<b>Sum of Bytes</b> - Cluster, VI calls itself recursively
+
+=== Parse String with TDs
+
+image::Parse_String_with_TDs__ogtk.vi.png[]
+
+Parses a flattened string with type descriptors to output an array of variant data.
+
+=== Get Cluster Elements TDs
+
+image::Get_Cluster_Elements_TDs__ogtk.vi.png[]
+
+Returns the elements of a cluster as an array of variant data.
+
+=== Split Cluster TD
+
+image::Split_Cluster_TD__ogtk.vi.png[]
+
+Splits the TD of a Cluster into its elements TDs.
+
+=== Get Data TD from Datalog Ref
+
+image::Get_Data_TD_from_Datalog_Ref__ogtk.vi.png[]
+
+Resolves the Type Descriptor for a Datalog Refnum.
+
+=== Array Dim(s) from TD
+
+image::Array_Dim(s)_from_TD__ogtk.vi.png[]
+
+Returns the number dimensions described by array type descriptor input.
+
+=== Get Element TD from Array TD
+
+image::Get_Element_TD_from_Array_TD__ogtk.vi.png[]
+
+Returns the type descriptor of the array element.
+
+=== Get Physical Units from TD
+
+image::Get_Physical_Units_from_TD__ogtk.vi.png[]
+
+Returns the physical units of the TD (number or array).
+
+=== Remove Typedefs from Variant
+
+image::Remove_Typedefs_from_Variant__ogtk.vi.png[]
+
+Removes typedef information via a variant to variant "conversion".
+
+=== Get Strings from Enum TD
+
+image::Get_Strings_from_Enum_TD__ogtk.vi.png[]
+
+Returns Enum Strings array, String Value and Enum Name from an Enum Type Descriptor.

@@ -1,0 +1,11 @@
+== VVariant
+
+image::VVariant_icon.png[]
+
+image::VVariant.png[]
+
+=== Unwrap VVariant
+
+image::Unwrap_VVariant__ogtk.vi.png[]
+
+Extracts a variant contained within a variant

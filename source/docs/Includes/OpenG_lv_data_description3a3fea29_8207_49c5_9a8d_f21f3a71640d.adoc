@@ -1,0 +1,14 @@
+Author:: vipm.io
+Copyright:: 2002-2024 Project Contributors (See CONTRIBUTORS.md)
+License:: BSD
+Compatible LabVIEW Versions:: >= 2020.
+Compatible OS Versions:: ALL.
+Description::
+The OpenG LabVIEW Data Library contains several routines for operating on Variant Data, Type Descriptors and LVOOP Data. It's commonly used for creating tools that can read or write any kind of data, dynamically, in LabVIEW. Examples are Anything to/from XML/JSON.
+
+.Release Notes
+****
+* Requires LV2020 or greater (sources upgraded to LV2020) [Issue #8]
+* This Package depends on these other packages:
+OpenG Error Library >= 4.2.0.23
+****
